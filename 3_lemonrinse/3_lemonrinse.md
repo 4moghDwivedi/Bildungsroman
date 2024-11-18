@@ -35,7 +35,7 @@ Any keywords mentioned in *italics* can be found (i.e. cmd+F) in the Max patch f
 
 
 ## Instrument design
-- *4synth* and *4synth2*
+- *4synth* and *4synth2
    
     * General sound design
          * Additive synthesis. *poly~* implementation. inputs to matrix~ include cycle~, rect~, saw~, tri~.
