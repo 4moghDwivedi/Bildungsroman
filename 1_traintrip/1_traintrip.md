@@ -145,7 +145,7 @@ To initialize the patch, ***reduce your volume***,  press spacebar once, and pre
 ## Aesthetic inspirations
 * The repeating rhythmic grooves heard in Animals as Leaders' **"The Joy of Motion"**
 * Morton Subotnick's **"Touch, Pt 1"**
-* Autechre's **"777"**.
+* Autechre's **"777"**
 * Heather Stebbins' **"Among Arrows"**
 
 
