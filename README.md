@@ -1,6 +1,6 @@
 # Bildungsroman
 
-composed and programmed by [Amogh Dwivedi](amoghdwivedi.com)
+composed and programmed by [Amogh Dwivedi](https://www.amoghdwivedi.com)
 
 [2m 30s presentation video on YouTube](https://youtu.be/mz0tRo19mB4?si=YCVCmkRN0yswlvq9)
 
