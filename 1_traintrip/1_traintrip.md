@@ -1,6 +1,6 @@
 # traintrip
 
-composed by [Amogh Dwivedi](amoghdwivedi.com)
+composed by [Amogh Dwivedi](https://amoghdwivedi.com)
 
 [YouTube video](https://youtu.be/PE_IUnKsLvY)
 
@@ -35,7 +35,7 @@ Any keywords mentioned in <ins>*underlined italics*</ins> can be found (i.e. cmd
 
 Any button with a green ring can be played after the patch is initialized.
 
-To initialize the patch, ***reduce your volume***,  press spacebar once, and press it again after a second or two. You should hear silence. Find the large number~ object and ensure it is not running. To play a rendering of the patch, press spacebar.
+To initialize the patch, ***reduce your volume***,  press spacebar once, and press it again after a second or two. You should hear silence. Find the large number~ object and ensure it is not running. To play a rendering of the patch, press spacebar again, and ensure the number~ object is updating.
 
 
 ## Instrument design

@@ -1,6 +1,6 @@
 # lemonrinse
 
-composed by [Amogh Dwivedi](amoghdwivedi.com)
+composed by [Amogh Dwivedi](https://amoghdwivedi.com)
 
 [YouTube video with Jitter visuals](https://youtu.be/UPX6tAA74dM)
 
@@ -32,6 +32,8 @@ I found great joy and comfort in jazz forms throughout my Berklee career, and de
 The piece's macrostructure follows a 12 bar jazz blues format, and unlike other pieces in *Bildungsroman*, it has no definite ending- the final rendering was edited in Ableton Live. Randomized voicings are generated through predefined harmonic structures which outline the harmonic progression. Additional modulation of parameters takes place at cadential points (such as the turnarounds). The greatest source of sonic inspiration was the potential of a string orchestra, and how many individuals could articulate vibrato at their own rates.
 
 Any keywords mentioned in <ins>*underlined italics*</ins> can be found (i.e. cmd+F) in the Max patch for convenience.
+
+Unlike the other patches, this starts straight away. To 
 
 
 ## Instrument design
