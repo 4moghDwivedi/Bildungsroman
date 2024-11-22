@@ -75,10 +75,23 @@ To initialize the patch, ***reduce your volume***,  press spacebar once, and pre
         * steal 1 is turned on, because of the high number of notes. With the low amplitude values in the later parts of the envelope, this is unlikely to produce easily audible retrigs of the envelope.
 
 * kick
+    * an aggressive sounding kick inspired by Hardstyle music.
+    * poly~ implementation. alongside designing a typical kickdrum, the patch also randomizes "amount of frequency shift". 
+    * The domain of this function's kick modulates to extremely long durations. This produces low bass tones for an unusually extended period of time. This randomized range's <ins>*upper limit*</ins> is modulated over time.
+    * The kick signal is split into <ins>*sound 1/sound 2*</ins>. Both have their own individualized signal chain processes. 
+        * <ins>*sound 1*</ins> is lowpassed, sent into a reverb, followed by a pitch shifter, i.e. the reverberation itself is pitchshifted.
+        * <ins>*sound 2*</ins> is highpassed, and sent into a frequency shifter whose parameters are randomized with every hit. The output of this signal is sent into a reverb. Both the L and R channels are then modulated using a rect~ LFO, whose frequencies are randomly modulated using a randomized line generator- <ins>*4moghInfiniteLine*</ins> for each channel.The output of this sound is then slightly distorted (even after the reverb).
+    * The sum of <ins>*sound 1/sound 2*</ins> are then divided in to a dry/wet chain, where the <ins>*gigareverb*</ins> parameters is long and washy. This is controlled using the <ins>*actual dry wet*</ins> knob.
+    * The final touch involves a pitch shifter which tranposes the entire signal up by 2 octaves, but the mix amount is extremely low (3).
 
 * hihat
-
-* clusters
+    * a simple hihat sound made using noise~. 
+    * poly~ implementation. The incoming symbol modulates the function's amplitude and domain value.
+    * the output is then randomly panned with each hit. The <ins>*M4L.pan1~*</ins> is placed unconventionally, and the audio signal from previously sounding hihats with longer domain lengths will also be panned alongside that from the the shorter ones. In hindsight this is unlikely to be a technical error because I already knew how to randomizing panning within poly~- it seems to be an aesthetic choice.
+    * The signal is then highpassed, pitch-shifted, and sent to <ins>*degrade~*</ins>.
+* <ins>*clusters*</ins>
+    * basic mc.saw~. clusters are generated using the deviate message.
+    * the reverb mix amount is inversely related to the cutoff frequency. modulated over time, it sounds as if the sound is getting closer.
 
 
 
@@ -112,10 +125,37 @@ To initialize the patch, ***reduce your volume***,  press spacebar once, and pre
     * basic fade-in/fadeouts take place using basic line~ modulations.
     * In the mid section of the piece, the kick "disables" and "enables" the poly~ patch entirely with each successive kick, using the <ins>*mute 0 1, mute 0 0*</ins> messages. This was initially considered somewhat dangerous but it works perfectly fine. Whether the trills are currently sounding or not influences the timbres of the other instruments, in order to exaggerate the muting of the trills. This info is sent remotely using <ins>*kickInfo*</ins>.
 
+    * <ins>*kick*</ins>
+        * similar to the <ins>*trills*</ins>, the domain value is modulated over time, and converges to a longer value by the end.
+        * timing of the triggers of the kicks is controlled by setting up a phasor, whose frequency is 4n, a relative beat value. the tempo is 61 BPM, and this transport is only relevant to the kick and hihats. 
+        * the kicks are triggered on beats 1 and 3, and initially are triggered on time. They eventually sound completely out of time because of some intentional delaying.
+        * the delays are setup so that the <ins>*second*</ins> kick is always appropriately distanced from the <ins>*first*</ins>.
+        * both the <ins>*first*</ins> and the <ins>*second*</ins> kicks then start to alternate the sound design of the overall patch. several parameters control this compositional gesture:
+            * <ins>*delayKick*</ins>
+                * this keeps track of the delayed bang.
+                * triggers an octave displacement in the pads.
+                * triggers an instant offset of frequency shift amount in the aforementioned <ins>*sound 2*</ins>
+                * randomizes the metro frequency which controls gating info for the hihat pattern.
+            * <ins>*kick 1*</ins>/<ins>*kick2*</ins>
+                * controls the muting of <ins>*trills*</ins>
+            * <ins>*kickInfo*</ins>
+                * the sound design changes were conceived not as changing due to every alternate kick, but rather whether the trills were muted or not. so, while the kicks eventually start to mute the trills, the trills, when muted, in turn produce other sound design changes.
+                * these sound design changes include drastically and instantly altering parameters of effects such as pitchshifters, reverb, but most notably, <ins>*degrade~*</ins>
+            * *sidechain*
+                the kick eventually increasingly momentarily attenuates the pads over time. achieved through a simple function object.
+
+
+    * hihat
+
+    * <ins>*clusters*</ins>
+        * they are simply turned on or off. a new set of frequencies is generated at the beginning of every patch. 
+        * as noted in the instrument design notes, as the frequency cutoff value increases, the reverb mix amount decreases. hints at the possibility of what can be done to a sound even if its pitch and rhythm are constant.
+
 ## Aesthetic inspirations
 
 *  Obviously, Pierre Boulez' **"Repons"**.
-
+* Hardstyle music (kick).
+* Jason Petrin techniques
 
 ## Errors and room for improvement
 
@@ -135,4 +175,6 @@ To initialize the patch, ***reduce your volume***,  press spacebar once, and pre
 
 * trills unused cutoff range value
 
-* more space/punctuation in gesture two can be added by offestting the macro values from the r slider. 
+* more space/punctuation in gesture two can be added by offsetting the macro values from the r slider. 
+
+* unnecessarily complicated kick logic.
