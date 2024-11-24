@@ -7,7 +7,7 @@ composed and programmed by [Amogh Dwivedi](https://www.amoghdwivedi.com)
 Finished in May 2024 at Berklee College of Music. Supervised by [Matthew Davidson](https://github.com/stretta).
 
 1. [traintrip](/1_traintrip/1_traintrip.md)
-2. yo pierre!
+2. [yo pierre!](/2_yo%20pierre!/2_yo%20pierre!.md)
 3. [lemonrinse](/3_lemonrinse/3_lemonrinse.md)
 
 ## Program note

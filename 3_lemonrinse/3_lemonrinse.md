@@ -2,7 +2,7 @@
 
 composed by [Amogh Dwivedi](https://amoghdwivedi.com)
 
-[YouTube video with Jitter visuals](https://youtu.be/UPX6tAA74dM)
+[Listen here (Jitter Visuals)](https://youtu.be/UPX6tAA74dM)
 
 ## Contents
 

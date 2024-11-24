@@ -2,7 +2,7 @@
 
 composed by [Amogh Dwivedi](https://amoghdwivedi.com)
 
-[YouTube video](https://youtu.be/eRPw4BkMbqM)
+[Listen here](https://youtu.be/eRPw4BkMbqM)
 
 ## Contents
 
