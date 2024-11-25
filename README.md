@@ -2,13 +2,13 @@
 
 composed and programmed by [Amogh Dwivedi](https://www.amoghdwivedi.com)
 
-[2m 30s presentation video on YouTube](https://youtu.be/mz0tRo19mB4?si=YCVCmkRN0yswlvq9)
+[Watch a presentation video here](https://www.youtube.com/playlist?list=PL2cE3bQQP2jmgVpH3gz74eZz4r64z1JOA)
 
 Finished in May 2024 at Berklee College of Music. Supervised by [Matthew Davidson](https://github.com/stretta).
 
-1. [traintrip](/1_traintrip/1_traintrip.md)
-2. [yo pierre!](/2_yo%20pierre!/2_yo%20pierre!.md)
-3. [lemonrinse](/3_lemonrinse/3_lemonrinse.md)
+1. [traintrip](/1_traintrip/1_traintrip.md) (this is the grooviest)
+2. [yo pierre!](/2_yo%20pierre!/2_yo%20pierre!.md) (this is the most convoluted)
+3. [lemonrinse](/3_lemonrinse/3_lemonrinse.md)(this is the simplest)
 
 ## Program note
 These pieces, conceived as preludes, were my capstone assignment for my Electronic Production and Design major. My goal was to create "serious"/academic electronic music that would have been accessible to my 16-year old self, who mostly listened to EDM growing up. 
@@ -19,7 +19,8 @@ I used Max/MSP for all of the synthesis and composition. There are no VSTs or ex
 
 ## IMPORTANT: before opening the patches
 * Prerequisites for opening the patches include- 
-    * installing rnbo guitar pedals, which can be found in the Package Manager in Max. 
-    * copy my instruments and tools into your Library folder in Max. This is found in your Documents folder.
-    * definitely turn on Scheduler in Overdrive in Audio Status. :)
+    * Installing rnbo guitar pedals, which can be found in the Package Manager in Max. 
+    * Copy my instruments and tools into your Library folder in Max. This is found in your Documents folder.
+    * Turn on Scheduler in Overdrive in Audio Status. 
+    * Take a deep breath if you want to go through the patches, and good luck. :)
 
