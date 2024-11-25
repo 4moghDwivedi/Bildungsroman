@@ -13,7 +13,7 @@ Finished in May 2024 at Berklee College of Music. Supervised by [Matthew Davidso
 ## Program note
 These pieces, conceived as preludes, were my capstone assignment for my Electronic Production and Design major. My goal was to create "serious"/academic electronic music that would have been accessible to my 16-year old self, who mostly listened to EDM growing up. 
 
-The title came to me from reading Brad Mehldau's intimately written autobiography. A bildungsroman refers to a literary genre in which the journey of a protagonist from childhood to adulthood is documented. 
+The title came to me from reading Brad Mehldau's intimately written autobiography, Formation. A bildungsroman refers to a literary genre in which the journey of a protagonist from childhood to adulthood is documented. 
 
 I used Max/MSP for all of the synthesis and composition. There are no VSTs or external plugins required. The pieces are generative, and slight variations in each rendering can be found.
 
