@@ -43,6 +43,8 @@ Any button with a green ring can be played after the patch is initialized.
 
 To initialize the patch, ***reduce your volume***,  press spacebar once, and press it again after a few seconds. You should hear silence. Find the large number~ object and ensure it is not running. To play a rendering of the patch, press spacebar again, and ensure the number~ object is updating.
 
+I tried to explore the relationship between sound design and composition in this piece. Notable gestures include the trilling, initially wide, which resolves to a stillness; the pads, which initially modulate erratically, resolving to a singular erratic control signal; the kicks, which impact the timbres of the other instruments in a responsive manner. A transcription of the opening of Boulez's Repons is attempted too. 
+
 
 ## Instrument design
 
