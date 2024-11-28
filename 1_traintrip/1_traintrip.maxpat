@@ -75,15 +75,15 @@
 					"fontname" : "Times New Roman",
 					"fontsize" : 40.614948884895682,
 					"id" : "obj-308",
-					"linecount" : 11,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1185.714274406433105, 653.571422338485718, 446.0, 501.0 ],
+					"patching_rect" : [ 1185.714274406433105, 653.571422338485718, 447.0, 591.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 46.808510303497314, 519.148932456970215, 846.0, 321.0 ],
-					"text" : "1. initialize patch- press spacebar, let the patch run for a few seconds, and press spacebar again to stop it.\n\n2. you can now test any of these instruments.\n\n3. to run the patch, press spacebar again."
+					"presentation_linecount" : 8,
+					"presentation_rect" : [ 46.808510303497314, 519.148932456970215, 846.0, 366.0 ],
+					"text" : "1. initialize patch- without manually turning audio on, press spacebar, let the patch run for several seconds (till phasor value hits 0.04), and press spacebar again to stop it.\n\n2. you can now test any of these instruments.\n\n3. to run the patch, press spacebar again."
 				}
 
 			}
@@ -2971,7 +2971,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 427.499959230422974, 1234.999882221221924, 39.007093012332916, 50.0 ],
 					"size" : 3,
-					"value" : 0
+					"value" : 1
 				}
 
 			}
@@ -3930,6 +3930,7 @@
 			}
 , 			{
 				"box" : 				{
+					"domain" : [ 20.0, 16000.0 ],
 					"fontface" : 0,
 					"id" : "obj-994",
 					"linmarkers" : [ 0.0, 11025.0, 16537.5 ],
@@ -5296,6 +5297,7 @@
 			}
 , 			{
 				"box" : 				{
+					"domain" : [ 20.0, 16000.0 ],
 					"fontface" : 0,
 					"id" : "obj-897",
 					"linmarkers" : [ 0.0, 11025.0, 16537.5 ],
@@ -13253,7 +13255,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 537.610658705234528, 688.495622575283051, 107.605715751647949, 38.0 ],
-									"text" : "114. 0. 16. 9187."
+									"text" : "95. 0. 71. 6827."
 								}
 
 							}
